@@ -27,7 +27,12 @@ Enemy.prototype.render = function() {
 
 // The Player Class
 class Player {
-
+    constructor() {
+        //properties for constructor method
+        this.sprite = 'images/char-cat-girl.png';
+        this.x = 0;
+        this.y = 0;
+    }
 }
 
 
