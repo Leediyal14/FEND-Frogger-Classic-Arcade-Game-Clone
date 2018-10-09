@@ -33,6 +33,12 @@ class Player {
         this.x = 0;
         this.y = 0;
     }
+
+    // Draw Player sprite
+    render() {
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
+    
 }
 
 
