@@ -63,6 +63,7 @@ class Player {
         for (let enemy of allEnemies) {
             if (this.y === enemy.y && (enemy.x + enemy.move / 2 > this.x
                 && enemy.x < this.x + this.move / 2)) {
+                alert('Game Over..!');
                 this.reset();
             }
         }
