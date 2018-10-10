@@ -1,3 +1,45 @@
 body {
     text-align: center;
+    background-color: wheat;
+    padding-bottom: 50px;
+}
+
+h1, h2 {
+    font-family: cursive, Comic Sans MS;
+    font-style: italic;
+    margin: 0.2em;
+    color: green;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 45px 0 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 0 0 40px 0;
+}
+
+p {
+    text-align: center;
+    color: darkmagenta;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h3 {
+    font-family: cursive, Comic Sans MS;
+    font-style: italic;
+    font-size: 25px;
+    color: darkmagenta;
+    padding: 20px 0 20px 0;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    padding-bottom: 25px;
 }
