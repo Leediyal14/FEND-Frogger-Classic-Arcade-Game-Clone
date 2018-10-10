@@ -77,10 +77,10 @@ class Player {
 const player = new Player();
 
 // Place the player object in a variable called player
-const enemy1 = new Enemy();
-const enemy2 = new Enemy();
-const enemy3 = new Enemy();
-const enemy4 = new Enemy();
+const enemy1 = new Enemy((-101 * 2), 0, 330);
+const enemy2 = new Enemy(101, 0, 330);
+const enemy3 = new Enemy(80, 83, 300);
+const enemy4 = new Enemy((-150 * 2), 83, 300);
 const allEnemies = [];
 allEnemies.push(enemy1, enemy2, enemy3, enemy4);
 console.log(allEnemies);
