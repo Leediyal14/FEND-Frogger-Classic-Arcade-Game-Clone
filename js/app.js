@@ -3,14 +3,26 @@ var Enemy = function() {
     this.sprite = 'images/enemy-bug.png';
     this.x = 0;
     this.y = 0;
+    this.move = 101;
+    this.limit = this.move * 5;
+    this.speed = speed;
+    this.resetPos = -this.move;
 };
 
-// Update the enemy's position, required method for game
+/*
+* Updating the enemy's position
+*/
+
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
-    // You should multiply any movement by the dt parameter
-    // which will ensure the game runs at the same speed for
-    // all computers.
+    // multiplying any movement by the dt parameter to ensure
+    // the game runs at the same speed for all computers
+    if (this.x < this.limit) {
+        this.x += this.speed * dt;
+    }
+    else {
+        this.x = this.resetPos;
+    }   
 };
 
 // Draw the enemy on the screen, required method for game
