@@ -30,8 +30,12 @@ class Player {
     constructor() {
         //properties for constructor method
         this.sprite = 'images/char-cat-girl.png';
-        this.x = 0;
-        this.y = 0;
+        this.move = 101;
+        this.jump = 83;
+        this.startX = this.move * 2;
+        this.startY = (this.jump * 4) + 65;
+        this.x = this.startX;
+        this.y = this.startY;
     }
 
     // Draw Player sprite
