@@ -99,7 +99,7 @@ class Player {
         // When the player reaches the water level, the game resets.
         if(this.y < 0) {
             setTimeout(() => {
-                alert('***YOU WON!***');
+                alert('***CONGRATULATIONS, YOU WON!***');
                 this.reset();
             }, 300);
         };
