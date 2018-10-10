@@ -38,6 +38,22 @@ class Player {
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
+
+    // handleInput() method - Handling the keyboard inputs
+    handleInput(input) {
+        if (input == 'left' && this.x > 0) {
+            this.x -= this.move;
+        }
+        if (input == 'up' && this.y > 0) {
+            this.y -= this.jump;
+        }
+        if (input == 'right' && this.x < 360) {
+            this.x += this.move;
+        }
+        if (input == 'down' && this.y < 332) {
+            this.y += this.jump;
+        }
+    }
     
 }
 
