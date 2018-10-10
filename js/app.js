@@ -2,7 +2,7 @@
 var Enemy = function() {
     this.sprite = 'images/enemy-bug.png';
     this.x = 0;
-    this.y = 0;
+    this.y = 65;
     this.move = 101;
     this.limit = this.move * 5;
     this.speed = speed;
