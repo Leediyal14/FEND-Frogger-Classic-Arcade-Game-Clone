@@ -52,6 +52,12 @@ class Player {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
+    // reset() method - Resets the Player's position
+    reset() {
+        this.x = this.startX;
+        this.y = this.startY;
+    }
+
     // handleInput() method - Handling the keyboard inputs
     handleInput(input) {
         if (input == 'left' && this.x > 0) {
