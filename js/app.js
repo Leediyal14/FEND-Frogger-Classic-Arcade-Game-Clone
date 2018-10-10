@@ -58,6 +58,16 @@ class Player {
         this.y = this.startY;
     }
 
+    // update() method - checking collisions
+    update() {
+        for (let enemy of allEnemies) {
+            if (this.y === enemy.y && (enemy.x + enemy.move / 2 > this.x
+                && enemy.x < this.x + this.move / 2)) {
+                this.reset();
+            }
+        }
+    }
+
     // handleInput() method - Handling the keyboard inputs
     handleInput(input) {
         if (input == 'left' && this.x > 0) {
