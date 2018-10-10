@@ -83,6 +83,14 @@ class Player {
         if (input == 'down' && this.y < 332) {
             this.y += this.jump;
         }
+
+        // When the player reaches the water level, the game resets.
+        if (this.y < 0) {
+            setTimeout(() => {
+                alert('***YOU WON!***');
+                this.reset();
+            }, 300);
+        };
     }
     
 }
